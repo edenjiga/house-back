@@ -9,4 +9,8 @@ export class AttendeesUseCases {
   public async create(createAttendeesDto: CreateAttendeesDto) {
     return this.attendeesService.create(createAttendeesDto);
   }
+
+  public async getAll() {
+    return this.attendeesService.getAll();
+  }
 }

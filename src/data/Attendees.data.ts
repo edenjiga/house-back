@@ -21,4 +21,8 @@ export class AttendeesService {
     const createdAttendees = new this.attendeesModel(createAttendeesDto);
     return createdAttendees.save();
   }
+
+  async getAll() {
+    return this.attendeesModel.find({});
+  }
 }
